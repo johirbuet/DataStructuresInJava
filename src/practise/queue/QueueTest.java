@@ -7,12 +7,12 @@ public class QueueTest {
 	public static void main(String[] args) {
 		// The peeked refrence value is also updated in the queue
 		Queue<Person> qu = new LinkedList<>();
-		qu.offer(new Person("Johir", 27));
-		qu.offer(new Person("Sifat",28));
-		qu.offer(new Person("Muhib",25));
+		qu.offer(new Person("Name1", 27));
+		qu.offer(new Person("Name2",28));
+		qu.offer(new Person("Name3",25));
 		System.out.println(qu);
 		Person p = qu.peek();
-		p.name = "Khokon";
+		p.name = "UpdatedName";
 		System.out.println(qu);
 		
 		// But for primitinve type and string it doesn't work
